@@ -9,6 +9,6 @@
         <Root level="info">
             <AppenderRef ref="Console"/>
         </Root>
-        <Logger name="org.apache.kafka.clients.consumer.internals" level="debug"/>
+        <Logger name="org.apache.kafka.clients.consumer.internals" level="info"/>
     </Loggers>
 </Configuration>
