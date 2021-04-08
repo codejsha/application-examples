@@ -3,5 +3,7 @@ server:
 spring:
   kafka:
     bootstrap-servers: test.example.com:9092
+    properties:
+      schema.registry.url: test.example.com:8081
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

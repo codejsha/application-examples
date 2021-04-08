@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>11</java.version>
+        <avro.version>1.8.2</avro.version>
+        <confluent.version>6.0.1</confluent.version>
     </properties>
 
     <dependencies>
@@ -36,6 +38,16 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>${avro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+            <version>${confluent.version}</version>
         </dependency>
 
         <dependency>
